@@ -1,0 +1,303 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+margin-bottom: 40px;
+}
+header{
+background-color:#2D25A0;
+;
+padding: 15px;
+width: 100%;
+margin-bottom: 40px;
+}
+.header-sec{
+width: 90%;
+margin: auto;
+display: grid;
+}
+#menu, #close-menu{
+width: 9%;
+padding: 4px 7px;
+border-radius: 10px;
+display: none;
+color: white;
+font-weight: bolder;
+}
+#close-menu{
+font-size: 35px;
+text-align: center;
+}
+#menu hr{
+height: 2px;
+background: white;
+border-radius: 10px;
+}
+a{
+text-decoration: none;
+color: white;
+font-weight: bolder;
+}
+.header-item-container{
+display: flex;
+justify-content: space-between;
+grid-column: 1 / span 2;
+align-items: center;
+}
+.header-item{
+text-align: center;
+padding: 4px 7px;
+border-radius: 10px;
+transition: 1s;
+}
+.header-item:hover, #menu:hover, #close-menu:hover{
+background: #581CCE;
+}
+.login-button-container{
+grid-column: 5 / span 2;
+}
+.login-button{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 50%;
+background: #E02C6D;
+padding: 2px 5px;
+transition: 2s;
+margin-left: 45%;
+
+}
+.login-button img{
+width: 30%;
+transition: 2s;
+}
+.login-button:hover{
+width: 95%;
+background-color: #74E1E5;
+margin-left: 0;
+}
+.login-button:hover img{
+width:15%;
+}
+.banner div{
+width: 40%;
+padding: 5%;
+}
+.banner img{
+width: 100%;
+transition: 2s;
+}
+.banner img:hover{
+transform: scale(1.1) rotate(30deg);
+}
+.banner{
+display:flex;
+justify-content: space-around;
+}
+.banner h1{
+color: white;
+font-weight: bolder;
+font-size: 50px;
+}
+.link{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 70%;
+background: #E02C6D;
+padding: 4px 7px;
+transition: 2s;
+}
+.link:hover{
+width: 95%;
+background: #74E1E5;
+}
+.player-container{
+width: 90%;
+margin: auto;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 25px;
+transition: 2s;
+}
+.player{
+padding: 3%;
+box-shadow: 5px -5px 15px #EDEDED, -5px 5px 15px #EDEDED, 5px 5px 15px #EDEDED, -5px -5px 15px #EDEDED;
+}
+.player img, .highlight img{
+width: 100%;
+}
+.player:hover{
+box-shadow: 5px -5px 15px #C7C7CA, -5px 5px 15px #C7C7CA, 5px 5px 15px #C7C7CA, -5px -5px 15px #C7C7CA;
+}
+#view-all-button{
+text-align: center;
+display: none;
+}
+#view-all{
+color: white;
+background-color: #E02C6D;
+border: none;
+outline: none;
+font-weight: bolder;
+font-size: 22px;
+}
+.highlight{
+width: 90%;
+margin: auto;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+}
+.highlight div{
+width: 50%;
+}
+.highlight h1{
+font-weight: bolder;
+font-size: 50px;
+}
+.highlight .link-button{
+width: 37%;
+}
+.logo{
+margin: auto;
+width: 50%;
+}
+.logo img{
+width: 100%;
+}
+.social-link{
+display: flex;
+justify-content: center;
+}
+.social-link div{
+width: 5%;
+padding: 1%;
+}
+.social-link img{
+width: 100%;
+}
+.copyright{
+text-align: center;
+}
+
+@media only screen and (max-width: 688px) {
+header{
+    padding: 7px 0px;
+}
+.header-sec{
+    width: 90%;
+    display: block;
+}
+.login-button-container{
+    width: 40%;
+}
+.login-button img{
+    width: 20%;
+}
+.header-item-container{
+    display: none;
+    transition: height 1s;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.header-item-container div{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.header-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    display: block;
+}
+.banner{
+    display: block;
+}
+.banner div{
+    width: 90%;
+    margin: auto;
+    padding: 7% 0;
+    text-align: center;
+}
+.link-button{
+    width: 40% !important;
+}
+.banner img{
+    width: 90%;
+}
+.player-container{
+    display: block;
+}
+#all-players{
+    height: 700px;
+    overflow: hidden;
+    border: 4px solid #E02C6D;
+    border-radius: 5px;
+}
+.player{
+    margin-bottom: 25px
+}
+#view-all-button{
+    display: block;
+}
+#view-all{
+    border-radius: 0 0 5px 5px;
+}
+.highlight{
+    display: block;
+    text-align: center;
+}
+.highlight div{
+    width: 100%;
+}
+.highlight .link-button{
+    margin: auto;
+    width: 20%;
+}
+.logo{
+    width: 80%;
+}
+.social-link div{
+    width: 19%;
+}
+}
+
+@media only screen and (min-width: 688px) and (max-width: 990px) {
+.player-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.highlight{
+    display: block;
+}
+.highlight div{
+    width: 100%;
+}
+#all-players{
+    height: 1000px;
+    overflow: hidden;
+    border: 4px solid #FF2C6C;
+    border-radius: 5px;
+}
+#view-all-button{
+    display: block;
+}
+#view-all{
+    border-radius: 0 0 5px 5px;
+}
+.highlight .link-button{
+    width: 20%;
+}
+.logo{
+    width: 80%;
+}
+.social-link div{
+    width: 10%;
+}
+}
